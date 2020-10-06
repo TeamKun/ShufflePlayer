@@ -1,0 +1,25 @@
+name: ShufflePlayer
+version: ${project.version}
+main: net.teamfruit.shuffleplayer.ShufflePlayer
+description: Shuffle player
+api-version: 1.15
+prefix: ShufflePlayer
+load: STARTUP
+depend:
+  - NickNamer
+authors: [Kamesuta]
+website: https://www.teamfruit.net/
+
+commands:
+  shuffle_swap:
+    description: 入れ替え
+    usage: /shuffle_swap <player1> <player2>
+    permission: shuffle
+  shuffle_clear:
+    description: 入れ替え全解除
+    usage: /shuffle_clear
+    permission: shuffle
+permissions:
+  shuffle:
+    description: Shuffle player
+    default: true
